@@ -1,0 +1,65 @@
+.chara {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 150px;
+    height: 150px;
+}
+
+.fanclub-cat {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.fanclub-tip {
+    top: 0;
+    left: 0;
+}
+
+.module.fanclub.fanclub-sm .fanclub-header .fanclub-fan-count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.fanclub-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-tabs .scroll-tabs-main {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    background-color: #ffffff;
+    font-size: 0;
+}
+
+.scroll-tabs.scroll-tabs-sm .scroll-tabs-main>.tab-item.tab-item-text {
+    line-height: 40px;
+    font-size: 11px;
+    padding: 0 10px;
+}
+
+.scroll-tabs .scroll-tabs-main>.tab-item.tab-item-text {
+    line-height: 50px;
+    font-size: 13px;
+    padding: 0 15px;
+    position: relative;
+    color: #000000;
+}
+
+.scroll-tabs .scroll-tabs-main>.tab-item {
+    display: inline-block;
+    vertical-align: middle;
+}

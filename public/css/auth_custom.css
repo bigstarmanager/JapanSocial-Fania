@@ -1,0 +1,124 @@
+.externel--login {
+    margin: auto;
+}
+
+.twitter--link__animaition {
+    flex: 1;
+    text-decoration: none;
+}
+
+.twitter--svg {
+    -webkit-font-smoothing: antialiased;
+    width: 300px;
+}
+
+.twitter--svg:hover #rect {
+    stroke-dasharray: 1700, 1700;
+    -webkit-animation: dash 0.5s linear;
+}
+
+@-webkit-keyframes dash {
+    from {
+        stroke-dasharray: 0, 1700;
+    }
+    to {
+        stroke-dasharray: 1700, 1700;
+    }
+}
+
+#rect {
+    stroke-dasharray: 0, 1700;
+}
+
+.animation-div {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.draw {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+}
+
+.draw::before,
+.draw::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.draw {
+    transition: color 0.25s;
+}
+
+.draw::before,
+.draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.draw::before {
+    top: 0;
+    left: 0;
+}
+
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+
+.draw:hover {
+    color: rgb(224 42 218);
+}
+
+.draw:hover::before,
+.draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.draw:hover::before {
+    border-top-color: rgb(224 42 218);
+    border-right-color: rgb(224 42 218);
+    transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+}
+
+.draw:hover::after {
+    border-bottom-color: rgb(224 42 218);
+    border-left-color: rgb(224 42 218);
+    transition: border-color 0s ease-out 0.3s, width 0.2s ease-out 0.3s, height 0.2s ease-out 0.5s;
+}
